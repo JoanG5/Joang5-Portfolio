@@ -20,7 +20,6 @@ function Hero() {
           alignItems: "center",
           justifyContent: "center",
           height: "80vh",
-          background: "linear-gradient(45deg, #8E24AA, #3949AB, #3F51B5)",
           backgroundSize: "300% 300%",
           padding: 3,
           margin: 0,
@@ -64,7 +63,7 @@ function Hero() {
                 rel="noopener noreferrer"
                 style={{ color: "white", textDecoration: "underline" }}
               >
-                <GitHubIcon sx={{ fontSize: 40}} />
+                <GitHubIcon sx={{ fontSize: 40 }} />
               </a>
               <a
                 href="https://www.linkedin.com/in/jguzman5/"
