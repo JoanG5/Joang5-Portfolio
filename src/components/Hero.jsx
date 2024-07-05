@@ -23,6 +23,8 @@ function Hero() {
           backgroundSize: "300% 300%",
           padding: 3,
           margin: 0,
+          backgroundColor: "rgba(0, 0, 0, 0.8)",
+          marginBottom: 10,
         }}
       >
         <Grow in={fadeIn} timeout={1700}>
