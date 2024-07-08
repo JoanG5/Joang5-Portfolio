@@ -6,7 +6,7 @@ import EmailIcon from "@mui/icons-material/Email";
 
 function Footer() {
 return (
-    <Box sx={{ bgcolor: "rgba(0, 0, 0, 0.8)", color: "white", py: 6, mt: 5 }}>
+    <Box sx={{ bgcolor: "rgba(0, 0, 0, 0.8)", color: "white", py: 6, mt: 10 }}>
         <Container
             maxWidth="md"
             sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}

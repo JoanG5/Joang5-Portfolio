@@ -65,7 +65,9 @@ function Hero() {
                 rel="noopener noreferrer"
                 style={{ color: "white", textDecoration: "underline" }}
               >
-                <GitHubIcon sx={{ fontSize: 40 }} />
+                <GitHubIcon
+                  sx={{ fontSize: 40, "&:hover": { color: "lightblue" } }}
+                />
               </a>
               <a
                 href="https://www.linkedin.com/in/jguzman5/"
@@ -73,7 +75,13 @@ function Hero() {
                 rel="noopener noreferrer"
                 style={{ color: "white", textDecoration: "underline" }}
               >
-                <LinkedInIcon sx={{ fontSize: 40, marginLeft: 10 }} />
+                <LinkedInIcon
+                  sx={{
+                    fontSize: 40,
+                    marginLeft: 10,
+                    "&:hover": { color: "lightblue" },
+                  }}
+                />
               </a>
             </Typography>
           </Container>

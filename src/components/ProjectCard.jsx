@@ -1,9 +1,16 @@
 import React from "react";
-import { Card, CardContent, CardMedia, Typography, Box } from "@mui/material";
+import { Link } from "react-router-dom";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  Box,
+  linkClasses,
+} from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-function ProjectCard({ image, title, description, technologies}) {
-    console.log(technologies);
+function ProjectCard({ image, title, description, technologies, github }) {
   return (
     <Card
       sx={{
@@ -25,11 +32,17 @@ function ProjectCard({ image, title, description, technologies}) {
     >
       <CardMedia
         component="img"
-        sx={{ width: 400, height: 300, objectFit: "cover" }}
+        sx={{ width: 400, height: 400, objectFit: "cover" }}
         image={image}
         alt={title}
       />
-      <Box sx={{ display: "flex", flexDirection: "column" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+        }}
+      >
         <CardContent sx={{ flex: "1 0 auto" }}>
           <Typography
             component="div"
@@ -39,9 +52,18 @@ function ProjectCard({ image, title, description, technologies}) {
               fontWeight: "bold",
               fontFamily: "'Roboto', sans-serif",
               marginBottom: "1rem",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
             }}
           >
             {title}
+            {console.log(github)}
+            <a href={github} target="_blank" rel="noopener noreferrer">
+              <GitHubIcon
+                sx={{ fontSize: 30, "&:hover": { color: "lightblue" } }}
+              />
+            </a>
           </Typography>
           <Typography
             variant="h6"
